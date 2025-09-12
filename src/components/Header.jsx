@@ -1,5 +1,5 @@
 import React from 'react';
-
+import logo from '../assets/logo.png';
 const Header = () => {
   return (
     <div
@@ -9,9 +9,13 @@ const Header = () => {
       <div className="text-2xl font-bold space-x-4 flex items-center">
         <h1
           className=" uppercase font-bold text-red-500"
-          style={{ color: 'red' }}
+          style={{ color: 'red', marginLeft: '16px' }}
         >
-          Movie
+          <img
+            style={{ width: '120px', height: '50px' }}
+            src={logo}
+            alt="Logo"
+          />
         </h1>
         <nav>
           <ul
